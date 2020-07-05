@@ -1,0 +1,6 @@
+{% include 'portfolio/base.html' %}
+{% block content %}
+<b>{{ blogid.title }}</b><br>
+{{ blogid.date|date:'d F Y'| upper}}
+{{ blogid.description}}
+{% endblock %}
