@@ -1,8 +1,8 @@
 {% include 'portfolio/base.html' %}
 {% block content %}
 {% load static %}
-<img src ="{% static 'subbu/portfolio/img/dog.jpg' %}">.................................................................................
-<h1> This is home Page</h1>
+<img src ="{% static 'subbu/portfolio/img/dog.jpg' %}">
+<h1> This is home Page :)</h1>
 {% for project in Projects %}
 {{ project.title }}
 {{ project.description }}

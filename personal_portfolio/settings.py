@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0mt*ns^l6&4j2tz2sb++hu+9ov%!guimk6=!xa=64&-we&xt*#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['Subbu.pythonanywhere.com']
 
@@ -131,6 +131,12 @@ STATIC_ROOT = os.path.join(BASE_DIR,'subbuassest')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+try:
+  from .local_settings import *
+except ImportError:
+  print(" No files since it is production")
+
 
 
 
