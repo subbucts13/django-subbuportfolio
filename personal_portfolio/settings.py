@@ -25,7 +25,7 @@ SECRET_KEY = '0mt*ns^l6&4j2tz2sb++hu+9ov%!guimk6=!xa=64&-we&xt*#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Subbu.pythonanywhere.com']
 
 
 # Application definition
@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS  = [
     os.path.join(BASE_DIR,'static'),
-   'D:/Python/Virtualenv/DNBi/personal_portfolio_subbu/portfolio/subbu/' , 
+   'D:/Python/Virtualenv/DNBi/personal_portfolio_subbu/portfolio/subbu/' ,
 
 ]
 
