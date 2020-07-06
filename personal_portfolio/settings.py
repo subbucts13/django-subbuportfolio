@@ -135,7 +135,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 try:
   from .local_settings import *
 except ImportError:
-  print(" No files since it is production")
+  print(" No files since it is production environment")
 
 
 
